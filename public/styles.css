@@ -303,12 +303,6 @@ main { display: block; }
 .hl { color: var(--on-dark-hl); }
 .hero-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
 .hero-grid > * { min-width: 0; }
-.eyebrow {
-  display: inline-flex; align-items: center; gap: 8px; margin-top: 0;
-  background: rgba(255, 255, 255, .16); border: 1px solid rgba(255, 255, 255, .3); border-radius: 999px;
-  padding: 6px 14px; font-size: .9rem; font-weight: 600; color: #fff; margin-bottom: 22px;
-}
-.dot { width: 8px; height: 8px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 4px rgba(255, 255, 255, .25); }
 .lead { font-size: clamp(1.05rem, 1.6vw, 1.2rem); max-width: 34em; color: rgba(255, 255, 255, .94); font-weight: 500; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: clamp(18px, 3vh, 28px) 0 clamp(18px, 3vh, 30px); }
 
