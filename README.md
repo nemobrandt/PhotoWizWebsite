@@ -6,9 +6,11 @@ Static website for **photowiz.com.au**. Plain HTML/CSS/JS with no build step, ho
 public/            <- everything Cloudflare publishes
   index.html       main page (all content lives here)
   styles.css       colours, layout, mobile styles
-  script.js        mobile menu, before/after slider, copy-email button
-  favicon.svg      logo icon
+  script.js        mobile menu, before/after slider, copy-email button, next-section arrow
+  work/            before/after photos for the slider (web-sized copies)
   menno-brandt.jpg photo used in the contact card
+  og-image.jpg     preview image shown when the link is shared
+  favicon.svg, icon-*.png, apple-touch-icon.png, site.webmanifest   icons
   404.html         "page not found" page
   _headers         security + caching headers (Cloudflare reads this)
   robots.txt, sitemap.xml
@@ -18,7 +20,7 @@ public/            <- everything Cloudflare publishes
 
 | What | Where |
 |---|---|
-| Contact email | `public/index.html`: search for `hello@photowiz.com.au` (appears 3 times) |
+| Contact email | `public/index.html`: search for `photowizcontact@gmail.com` (appears 4 times, including the structured data) |
 | Colour theme | `public/index.html`: `data-theme="green"` on the `<html>` tag (`green`, `blue` or `orange`). Preview any theme by adding `?theme=blue` to the URL |
 | Theme colours | `public/styles.css`: the theme blocks at the top |
 | Services list | `public/index.html`: the `SERVICES` section |
@@ -74,11 +76,31 @@ This lets Cloudflare serve the root domain (`photowiz.com.au`, not only `www`) a
 
 SSL (the padlock) is set up automatically.
 
-### 5. Set up the email address (free)
-The site's contact button uses `hello@photowiz.com.au`. To make it forward to your Gmail:
+### 5. Contact email
+The site sends enquiries to `photowizcontact@gmail.com`, so there's nothing to set up.
 
-1. In Cloudflare, open `photowiz.com.au` → **Email → Email Routing → Get started**.
-2. Create the address `hello` → destination: your personal Gmail → verify via the email Cloudflare sends you.
-3. Let Cloudflare add the MX/TXT records it asks for.
+The domain's `MX` record points to Google Workspace (`SMTP.GOOGLE.COM`). Leave it as is, and **don't turn on
+Cloudflare Email Routing**, which would replace it.
 
-Emails to hello@photowiz.com.au now land in your Gmail. To **reply** as hello@photowiz.com.au from Gmail, search "Gmail send mail as Cloudflare email routing" for a guide. Alternatively, swap the address in `index.html` for any email you already use.
+---
+
+## SEO notes
+
+Already on the site: page title and description aimed at Melbourne searches, structured data for the
+business, its three services and the FAQ (Google can show these as rich results), link-preview image,
+icons, and a sitemap that includes the photos.
+
+**When you change content:**
+- The FAQ appears twice in `index.html`: once as the visible questions and once in the structured data
+  block in the `<head>`. Keep the two matching.
+- Update `<lastmod>` in `sitemap.xml` to the date of the change.
+- After changing `styles.css` or `script.js`, bump the `?v=` number where `index.html` links to them, so
+  returning visitors get the new version.
+
+**Outside the website (these matter most for local ranking):**
+1. Google Search Console: verify the domain and submit `https://photowiz.com.au/sitemap.xml`.
+2. Google Business Profile: create a service-area business for Melbourne with the three services.
+3. Reviews: ask happy clients to leave a Google review.
+4. Listings: add the business (same name, website and email everywhere) to Bing Places, Apple Business
+   Connect, Yelp, True Local, Hotfrog and Yellow Pages.
+5. Links: link to photowiz.com.au from mennobrandt.com and any social profiles.
