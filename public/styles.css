@@ -19,7 +19,7 @@
   --hero: #2F6B45;
   --hero-glow-a: rgba(120, 190, 140, .45);
   --hero-glow-b: rgba(10, 40, 22, .45);
-  --card-services: #1F4A33;
+  --card-services: #11302A;   /* dark, slightly cooler forest */
   --card-process: #142E22;
   --card-privacy-a: #2E6B47;
   --card-privacy-b: #1F5036;
@@ -51,7 +51,7 @@
   --hero: #1F4E8C;
   --hero-glow-a: rgba(120, 170, 235, .45);
   --hero-glow-b: rgba(8, 25, 55, .45);
-  --card-services: #163A66;
+  --card-services: #0F2A4C;
   --card-process: #0F2747;
   --card-privacy-a: #23599C;
   --card-privacy-b: #183F72;
@@ -240,7 +240,7 @@ main { display: block; }
 /* Shared gradient: lighter top-left, darker bottom-right, soft glow */
 .p-grad {
   background:
-    radial-gradient(800px 520px at 88% 0%, var(--card-glow), transparent 60%),
+    radial-gradient(800px 520px at var(--glow-at, 88% 0%), var(--card-glow), transparent 60%),
     linear-gradient(150deg,
       color-mix(in srgb, var(--base), var(--tint) 30%) 0%,
       var(--base) 48%,
@@ -389,7 +389,7 @@ main { display: block; }
 .copy-hint { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--on-dark-hl); font-weight: 800; flex-shrink: 0; }
 
 /* ===== Services ===== */
-.p-services { --base: var(--card-services); }
+.p-services { --base: var(--card-services); --glow-at: 12% 0%; }
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .card {
   background: linear-gradient(160deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, .04));
