@@ -24,7 +24,7 @@ public/            <- everything Cloudflare publishes
 | Services list | `public/index.html`: the `SERVICES` section |
 | FAQ | `public/index.html`: the `FAQ` section |
 | Your photo | replace `public/menno-brandt.jpg` (keep the same filename) |
-| ABN in footer | `public/index.html`: uncomment the ABN line in the footer |
+| ABN | `public/index.html`: footer, and `taxID` in the business details near the top |
 
 Preview locally:
 
