@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "site", "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "4317", "-d", "public"], "port": 4317, "autoPort": false }
+  ]
+}

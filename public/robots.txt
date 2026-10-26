@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://photowiz.com.au/sitemap.xml
