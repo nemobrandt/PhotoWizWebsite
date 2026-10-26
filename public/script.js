@@ -50,6 +50,24 @@
     });
   });
 
+  // Highlight the navbar link for the section currently on screen
+  if ('IntersectionObserver' in window) {
+    var links = {};
+    menu.querySelectorAll('a[href^="#"]:not(.btn)').forEach(function (a) {
+      var id = a.getAttribute('href').slice(1);
+      links[id === 'about' ? 'contact' : id] = a;   // "About" lives in the contact section
+    });
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        Object.keys(links).forEach(function (k) { links[k].classList.remove('active'); });
+        var link = links[entry.target.id];
+        if (link) link.classList.add('active');
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('main section[id]').forEach(function (sec) { spy.observe(sec); });
+  }
+
   // Footer year
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
