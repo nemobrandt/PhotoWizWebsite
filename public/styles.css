@@ -243,7 +243,6 @@ main { display: block; }
   min-height: 100svh;
   display: flex; flex-direction: column; justify-content: center;
   padding-top: var(--top-space); padding-bottom: clamp(24px, 5vh, 64px);
-  scroll-snap-align: start;
 }
 /* Shared gradient: lighter top-left, darker bottom-right, soft glow */
 .p-grad {
@@ -522,11 +521,6 @@ main { display: block; }
   .ticks li { font-size: .93rem; }
 }
 
-/* Sections settle into place when you stop near one, but you can stop anywhere to read */
-@media (prefers-reduced-motion: no-preference) {
-  html { scroll-snap-type: y proximity; }
-}
-.site-footer { scroll-snap-align: end; }
 
 /* ===== Reveal on scroll ===== */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
