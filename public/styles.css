@@ -1354,3 +1354,18 @@ body::before {
 .tone-light .faq details[open] { background: linear-gradient(150deg, rgba(255, 255, 255, .85) 0%, rgba(255, 255, 255, .55) 100%); }
 .tone-light .copy-email { background: rgba(255, 255, 255, .6); border: 1px solid rgba(255, 255, 255, .8); }
 
+
+/* Almost-white page background (just a whisper of mint) */
+body::before {
+  background:
+    radial-gradient(40vw 40vw at 8% 12%, rgba(150, 205, 168, .14), transparent 62%),
+    radial-gradient(38vw 38vw at 90% 25%, rgba(185, 232, 202, .2), transparent 62%),
+    radial-gradient(40vw 40vw at 50% 90%, rgba(160, 214, 180, .12), transparent 62%),
+    #F9FBFA;
+}
+
+/* Main and contact cards: no edge or bezel, just a soft shadow */
+.hero, .p-contact.tone-matte {
+  border: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 10px 24px rgba(0, 0, 0, .12), 0 30px 60px rgba(0, 0, 0, .16);
+}
