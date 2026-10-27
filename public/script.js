@@ -95,7 +95,7 @@
 
     nextBtn.addEventListener('click', function () {
       if (atEnd()) { window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
-      var next = sections.filter(function (sec) { return sec.getBoundingClientRect().top > 8; })[0];
+      var next = sections.filter(function (sec) { return sec.getBoundingClientRect().top > 30; })[0];
       if (next) next.scrollIntoView({ behavior: 'smooth', block: 'start' });
       else window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
     });

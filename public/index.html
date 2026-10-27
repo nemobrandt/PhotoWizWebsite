@@ -44,7 +44,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=21">
   <script>
     // Colour theme: green by default. Preview others with ?theme=blue or ?theme=orange
     (function () {
@@ -270,14 +270,10 @@
     <!-- HERO -->
     <section class="panel hero" id="home">
       <div class="container hero-grid">
-        <div class="hero-copy">
+        <div class="hero-head">
           <h1 class="hero-title">Photo <span class="hl">Wiz</span></h1>
-          <p class="tagline">Websites, photos &amp; videos, <span class="hl">polished for less.</span></p>
-          <p class="lead">A small, local Melbourne business offering affordable web design, photo editing and video editing. You deal directly with me, and your files never leave my hands.</p>
-          <div class="hero-actions">
-            <a class="btn btn-ghost" href="#services">See services</a>
-            <a class="btn btn-white" href="#contact">Contact for a Quote</a>
-          </div>
+          <p class="tagline">Websites, photos &amp; videos</p>
+          <p class="lead">A small, local Melbourne business offering affordable web design, photo editing and video editing.</p>
         </div>
 
         <!-- Before / after: a real edit -->
@@ -291,13 +287,17 @@
             <div class="ba-handle" aria-hidden="true"><span></span></div>
             <input class="ba-range" type="range" min="0" max="100" value="6" autocomplete="off" aria-label="Drag to remove the people in the background of the photo">
           </div>
-          <p class="ba-caption">A real Photo Wiz edit: background people removed.</p>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-white" href="#contact">Contact for a Quote</a>
+          <a class="btn btn-ghost" href="#services">See services</a>
         </div>
       </div>
     </section>
 
     <!-- CONTACT + ABOUT -->
-    <section class="panel p-contact" id="contact">
+    <section class="panel p-contact tone-matte" id="contact">
       <span id="about" class="anchor" aria-hidden="true"></span>
       <div class="container meet">
         <figure class="meet-photo">
@@ -330,7 +330,7 @@
     </section>
 
     <!-- SERVICES -->
-    <section class="panel section p-grad p-services" id="services">
+    <section class="panel section p-services tone-light" id="services">
       <div class="container">
         <div class="section-head">
           <p class="kicker">Services</p>
@@ -389,7 +389,7 @@
     </section>
 
     <!-- PROCESS -->
-    <section class="panel section p-grad p-process" id="process">
+    <section class="panel section p-process tone-light" id="process">
       <div class="container">
         <div class="section-head">
           <p class="kicker">How it works</p>
@@ -421,7 +421,7 @@
     </section>
 
     <!-- PRIVACY -->
-    <section class="panel section p-grad privacy" id="privacy">
+    <section class="panel section privacy tone-light" id="privacy">
       <div class="container privacy-grid">
         <div>
           <p class="kicker kicker-light">Your privacy</p>
@@ -450,7 +450,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="panel section p-grad p-faq" id="faq">
+    <section class="panel section p-faq tone-light" id="faq">
       <div class="container narrow">
         <div class="section-head">
           <p class="kicker">FAQ</p>
@@ -522,6 +522,6 @@
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
   </button>
 
-  <script src="script.js?v=4" defer></script>
+  <script src="script.js?v=5" defer></script>
 </body>
 </html>
