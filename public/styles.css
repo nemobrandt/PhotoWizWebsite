@@ -1455,3 +1455,13 @@ body::before {
 /* Subtler title glow */
 .hero-title .hl { filter: drop-shadow(0 0 14px rgba(95, 184, 131, .16)); }
 .hero-head::before { background: radial-gradient(closest-side, rgba(95, 184, 131, .06), transparent 70%); }
+
+/* Title: solid colours, no gradient or glow */
+.hero-title, .hero-title .hl {
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  filter: none;
+}
+.hero-title { color: #fff; text-shadow: 0 8px 28px rgba(0, 0, 0, .45); }
+.hero-title .hl { color: var(--on-dark-hl); text-shadow: none; }
+.hero-head::before { display: none; }
