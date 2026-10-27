@@ -1451,3 +1451,7 @@ body::before {
     radial-gradient(1100px 520px at 50% -10%, rgba(255, 255, 255, .04), transparent 65%),
     linear-gradient(180deg, #0F2E1D 0%, #0B2416 55%, #06180E 100%);
 }
+
+/* Subtler title glow */
+.hero-title .hl { filter: drop-shadow(0 0 14px rgba(95, 184, 131, .16)); }
+.hero-head::before { background: radial-gradient(closest-side, rgba(95, 184, 131, .06), transparent 70%); }
