@@ -2,7 +2,7 @@
 
 Static website for **photowiz.com.au**. Plain HTML/CSS/JS with no build step, hosted on Cloudflare Pages.
 
-> **Currently showing an "under development" holding page.** `public/index.html` is a single standalone
+> **Currently showing a plain "Website Under Construction" page.** `public/index.html` is a single standalone
 > page with the email and ABN. The full website is saved in git under the tag **`full-site`**. To bring it
 > back, restore that version of `public/index.html`:
 >
