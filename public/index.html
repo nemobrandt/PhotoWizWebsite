@@ -1,529 +1,71 @@
 <!doctype html>
-<html lang="en-AU" data-theme="green">
+<html lang="en-AU">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Photo Wiz | Web Design, Photo Editing &amp; Video Editing in Melbourne</title>
-  <meta name="description" content="Affordable web design, photo editing and video editing in Melbourne. Small business websites, photo retouching &amp; object removal, and social media video edits. Free quotes.">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-  <meta name="author" content="Menno Brandt">
+  <title>Photo Wiz | Website under development</title>
+  <meta name="description" content="The Photo Wiz website is under development. Photo Wiz offers web design, photo editing and video editing in Melbourne. Contact photowizcontact@gmail.com.">
   <meta name="theme-color" content="#161618">
   <link rel="canonical" href="https://photowiz.com.au/">
-  <link rel="alternate" hreflang="en-AU" href="https://photowiz.com.au/">
-
-  <!-- Local SEO -->
-  <meta name="geo.region" content="AU-VIC">
-  <meta name="geo.placename" content="Melbourne">
-  <meta name="geo.position" content="-37.8136;144.9631">
-  <meta name="ICBM" content="-37.8136, 144.9631">
-
-  <!-- Icons -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
-
-  <!-- Link previews (Facebook, Messenger, WhatsApp, LinkedIn, iMessage) -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Photo Wiz">
-  <meta property="og:title" content="Photo Wiz | Web Design, Photo &amp; Video Editing in Melbourne">
-  <meta property="og:description" content="Affordable websites, photo edits and video editing from a local Melbourne business. Free quotes, 100% confidential.">
-  <meta property="og:url" content="https://photowiz.com.au/">
-  <meta property="og:locale" content="en_AU">
-  <meta property="og:image" content="https://photowiz.com.au/og-image.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Photo Wiz: web design, photo and video editing in Melbourne">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Photo Wiz | Web Design, Photo &amp; Video Editing in Melbourne">
-  <meta name="twitter:description" content="Affordable websites, photo edits and video editing from a local Melbourne business. Free quotes.">
-  <meta name="twitter:image" content="https://photowiz.com.au/og-image.jpg">
-
-  <link rel="preload" as="image" href="work/before.jpg" fetchpriority="high">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=51">
-  <script>
-    // Colour theme: green by default. Preview others with ?theme=blue or ?theme=orange
-    (function () {
-      var t = new URLSearchParams(location.search).get('theme');
-      if (t === 'green' || t === 'blue' || t === 'orange') document.documentElement.setAttribute('data-theme', t);
-    })();
-  </script>
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://photowiz.com.au/#website",
-      "url": "https://photowiz.com.au/",
-      "name": "Photo Wiz",
-      "inLanguage": "en-AU",
-      "publisher": {
-        "@id": "https://photowiz.com.au/#business"
-      }
-    },
-    {
-      "@type": [
-        "ProfessionalService",
-        "LocalBusiness"
-      ],
-      "@id": "https://photowiz.com.au/#business",
-      "name": "Photo Wiz",
-      "alternateName": "Photo Wiz (Melbourne)",
-      "description": "Affordable web design, photo editing and video editing in Melbourne, run by Menno Brandt. Small business websites, photo retouching and object removal, and video editing for social media.",
-      "url": "https://photowiz.com.au/",
-      "email": "photowizcontact@gmail.com",
-      "logo": "https://photowiz.com.au/icon-512.png",
-      "image": [
-        "https://photowiz.com.au/og-image.jpg",
-        "https://photowiz.com.au/work/after.jpg"
-      ],
-      "taxID": "80 150 760 138",
-      "priceRange": "$",
-      "currenciesAccepted": "AUD",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Melbourne",
-        "addressRegion": "VIC",
-        "addressCountry": "AU"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -37.8136,
-        "longitude": 144.9631
-      },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Melbourne"
-        },
-        {
-          "@type": "State",
-          "name": "Victoria"
-        },
-        {
-          "@type": "Country",
-          "name": "Australia"
-        }
-      ],
-      "founder": {
-        "@type": "Person",
-        "name": "Menno Brandt",
-        "url": "https://mennobrandt.com",
-        "image": "https://photowiz.com.au/menno-brandt.jpg",
-        "affiliation": {
-          "@type": "CollegeOrUniversity",
-          "name": "University of Melbourne"
-        }
-      },
-      "sameAs": [
-        "https://mennobrandt.com"
-      ],
-      "knowsAbout": [
-        "Web design",
-        "Web development",
-        "Photo editing",
-        "Photo retouching",
-        "Background removal",
-        "Photo restoration",
-        "Video editing",
-        "Colour grading",
-        "Social media video"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Photo Wiz services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Web design and development",
-              "serviceType": "Web design",
-              "description": "Business and portfolio websites, mobile-friendly design, domain, hosting and email setup, updates to existing sites and ongoing support.",
-              "areaServed": "Melbourne"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Photo editing and retouching",
-              "serviceType": "Photo editing",
-              "description": "Colour correction, background removal and replacement, blemish, object and people removal, old photo restoration, and product and real-estate photo editing.",
-              "areaServed": "Melbourne"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Video editing",
-              "serviceType": "Video editing",
-              "description": "Cutting and pacing, colour grading, audio clean-up, captions, titles and music, and edits for Reels, TikTok, YouTube, events and family videos.",
-              "areaServed": "Melbourne"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://photowiz.com.au/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How much does it cost?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "It depends on the job. A quick photo touch-up costs far less than a full website. Email me with the details and you'll get a free, fixed quote before any work begins."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you build websites for small businesses in Melbourne?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. I design and build fast, mobile-friendly websites for Melbourne small businesses, sole traders and creatives, and can set up your domain, hosting and email too."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What kinds of photo and video editing do you do?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Photo retouching, colour correction, background and object removal, old photo restoration, and product and real-estate photos. For video: cutting, colour grading, audio clean-up, captions and edits for Reels, TikTok and YouTube."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I send you my files?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Small files can be attached to an email. For larger photos or videos, a link from Google Drive, Dropbox, OneDrive or WeTransfer works well."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does it take?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most photo edits are back within a day or two. Video and web projects vary, and your quote will include an expected timeframe."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What if I'm not happy with the result?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tell me what you'd like changed. Reasonable revisions are included, and I'll work with you until it's right."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you only work with people in Melbourne?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "I'm based in Melbourne, but everything is done online, so I can work with clients anywhere in Australia and beyond."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Will you keep copies of my files?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Only as long as needed to finish the job and handle any follow-up tweaks. Just ask, and I'll permanently delete everything once you're happy."
-          }
-        }
-      ]
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; }
+    body {
+      font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #F9FBFA;
+      color: #44403C;
+      display: flex; align-items: center; justify-content: center;
+      padding: clamp(10px, 1.6vw, 22px);
+      -webkit-font-smoothing: antialiased;
     }
-  ]
-}
-  </script>
+    .card {
+      width: 100%; min-height: calc(100svh - 2 * clamp(10px, 1.6vw, 22px));
+      border-radius: clamp(20px, 2.4vw, 34px);
+      background: linear-gradient(180deg, #1C1C1E 0%, #151517 55%, #0F0F11 100%);
+      border: 1px solid rgba(255, 255, 255, .14);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .14), 0 12px 28px rgba(0, 0, 0, .14), 0 34px 70px rgba(0, 0, 0, .18);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 48px 24px; color: rgba(255, 255, 255, .78);
+    }
+    .tag {
+      display: inline-block; font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+      color: #CDEBD6; background: rgba(255, 255, 255, .08); padding: 6px 14px; border-radius: 999px; margin-bottom: 22px;
+    }
+    h1 { margin: 0 0 .2em; color: #fff; font-weight: 800; letter-spacing: -.045em; line-height: .95; font-size: clamp(3.2rem, 11vw, 6.5rem); }
+    h1 span { color: #CDEBD6; }
+    .lead { margin: .6em 0 0; font-size: clamp(1.05rem, 2.4vw, 1.35rem); color: #fff; font-weight: 600; }
+    .sub { margin: .5em auto 0; max-width: 32em; font-size: 1rem; line-height: 1.6; }
+    .email {
+      display: inline-flex; align-items: center; gap: .5em; margin-top: 30px;
+      background: #fff; color: #245A3A; text-decoration: none; font-weight: 700;
+      padding: .9em 1.6em; border-radius: 999px; box-shadow: 0 10px 26px rgba(0, 0, 0, .35);
+      transition: transform .15s ease;
+    }
+    .email:hover { transform: translateY(-1px); }
+    .email svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .meta { margin-top: 44px; font-size: .85rem; color: rgba(255, 255, 255, .5); line-height: 1.8; }
+    :focus-visible { outline: 3px solid #fff; outline-offset: 3px; border-radius: 6px; }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header" id="top">
-    <div class="nav">
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="nav-menu" class="nav-menu" aria-label="Main">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#process">How it works</a>
-        <a href="#privacy">Privacy</a>
-        <a href="#faq">FAQ</a>
-        <a class="btn btn-primary btn-sm" href="#contact">Contact me</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <!-- HERO -->
-    <section class="panel hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-head">
-          <h1 class="hero-title">Photo <span class="hl">Wiz</span></h1>
-          <p class="tagline">Websites, photos &amp; videos</p>
-          <p class="lead">A small, local Melbourne business offering affordable web design, photo editing and video editing.</p>
-        </div>
-
-        <!-- Before / after: a real edit -->
-        <div class="hero-visual">
-          <div class="ba" id="ba" style="--pos:6%">
-            <img class="ba-img" src="work/before.jpg" alt="Photo editing example, original: a runner in Melbourne with a bystander and a second runner in the background" width="900" height="1350" fetchpriority="high" decoding="async">
-            <img class="ba-img ba-after" src="work/after.jpg" alt="Photo editing example, edited: the bystander and second runner removed so only the main runner remains" width="900" height="1350" decoding="async">
-            <span class="ba-tag ba-tag-after">After Photo Wiz</span>
-            <span class="ba-tag ba-tag-before">Before Photo Wiz</span>
-            <span class="ba-hint">Drag to remove the people &rarr;</span>
-            <div class="ba-handle" aria-hidden="true"><span></span></div>
-            <input class="ba-range" type="range" min="0" max="100" value="6" autocomplete="off" aria-label="Drag to remove the people in the background of the photo">
-          </div>
-        </div>
-
-        <div class="hero-actions">
-          <a class="btn btn-white" href="#contact">Contact for a Quote</a>
-          <a class="btn btn-ghost" href="#services">See services</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT + ABOUT -->
-    <section class="panel p-contact tone-matte" id="contact">
-      <span id="about" class="anchor" aria-hidden="true"></span>
-      <div class="container meet">
-        <figure class="meet-photo">
-          <span class="meet-frame"><img src="menno-brandt.jpg" alt="Menno Brandt, owner of Photo Wiz in Melbourne" width="1200" height="801" loading="lazy" decoding="async"></span>
-          <figcaption>
-            <strong>Menno Brandt</strong>
-            <span>Founder, Photo Wiz &middot; University of Melbourne student</span>
-          </figcaption>
-        </figure>
-        <div class="meet-copy">
-          <p class="kicker">Who you're dealing with</p>
-          <h2>Contact Me for a Free Quote</h2>
-          <p class="meet-intro">Hi, I'm Menno. Send me a quick email describing what you need, and attach a sample if you can. I'll reply with a free, no-obligation quote, usually within 24 hours.</p>
-          <div class="meet-actions">
-            <a class="btn btn-white btn-lg" id="email-btn" href="mailto:photowizcontact@gmail.com?subject=Quote%20request%20-%20Photo%20Wiz">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-              Email me
-            </a>
-            <button class="copy-email" type="button" data-email="photowizcontact@gmail.com">
-              <span class="copy-label">photowizcontact@gmail.com</span>
-              <span class="copy-hint">Copy</span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="meet-foot">
-        <a class="meet-site" href="https://mennobrandt.com" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>
-            More about me at <b>mennobrandt.com</b>
-          </a>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="panel section p-services tone-light" id="services">
-      <div class="container">
-        <div class="section-head">
-          <p class="kicker">What I offer</p>
-          <h2>Our Services</h2>
-          <p>Web design, photo editing and video editing for Melbourne businesses and locals. Careful work at a fair price, with a clear quote before anything starts.</p>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="3"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg>
-            </div>
-            <h3>Photo editing &amp; retouching</h3>
-            <p>From quick tweaks to detailed retouching.</p>
-            <ul class="ticks">
-              <li>Colour correction &amp; lighting fixes</li>
-              <li>Background removal &amp; replacement</li>
-              <li>Blemish, object &amp; people removal</li>
-              <li>Old photo restoration</li>
-              <li>Product &amp; real-estate photos</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 9h20M9 13l-2 2 2 2M15 13l2 2-2 2"/></svg>
-            </div>
-            <h3>Web design &amp; development</h3>
-            <p>Fast, modern websites for small businesses.</p>
-            <ul class="ticks">
-              <li>Business &amp; portfolio websites</li>
-              <li>Mobile-friendly, responsive design</li>
-              <li>Domain, hosting &amp; email setup</li>
-              <li>Updates to existing sites</li>
-              <li>Ongoing support if you need it</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="14" height="12" rx="3"/><path d="M16 10l6-3v10l-6-3z"/></svg>
-            </div>
-            <h3>Video editing</h3>
-            <p>Clean, engaging edits for any platform.</p>
-            <ul class="ticks">
-              <li>Cutting, trimming &amp; pacing</li>
-              <li>Colour grading &amp; audio clean-up</li>
-              <li>Captions, titles &amp; music</li>
-              <li>Reels, TikToks &amp; YouTube</li>
-              <li>Event &amp; family videos</li>
-            </ul>
-          </article>
-        </div>
-        <p class="swipe-hint" aria-hidden="true">Swipe to see all three &rarr;</p>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="panel section p-process tone-light" id="process">
-      <div class="container">
-        <div class="section-head">
-          <p class="kicker">How it works</p>
-          <h2>Our Process</h2>
-        </div>
-        <ol class="steps">
-          <li>
-            <span class="step-num">1</span>
-            <h3>Get in touch</h3>
-            <p>Email me with what you need. Attach a sample or describe the job.</p>
-          </li>
-          <li>
-            <span class="step-num">2</span>
-            <h3>Free quote</h3>
-            <p>You get a clear, fixed price and timeframe. No surprises.</p>
-          </li>
-          <li>
-            <span class="step-num">3</span>
-            <h3>I get to work</h3>
-            <p>Your files are handled securely and kept private throughout.</p>
-          </li>
-          <li>
-            <span class="step-num">4</span>
-            <h3>Review &amp; deliver</h3>
-            <p>You check the result, ask for tweaks, and receive the final files.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- PRIVACY -->
-    <section class="panel section privacy tone-light" id="privacy">
-      <div class="container privacy-grid">
-        <div>
-          <p class="kicker kicker-light">100% confidential</p>
-          <h2>Privacy Protections</h2>
-          <p class="privacy-lead">Personal photos, family videos and business material all deserve the same care. Everything you send me is treated as 100% confidential.</p>
-        </div>
-        <ul class="privacy-list">
-          <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>
-            <div><h3>Never shared</h3><p>Your files are never shared, sold, or passed to anyone else.</p></div>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
-            <div><h3>One person, start to finish</h3><p>I do the work myself. Nothing is outsourced.</p></div>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg>
-            <div><h3>Deleted on request</h3><p>Once the job's done, I can permanently delete your originals and edits.</p></div>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5z"/><path d="M9 12l2 2 4-4"/></svg>
-            <div><h3>Never used for promotion</h3><p>Your work never appears in my portfolio or socials without your written OK.</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="panel section p-faq tone-light" id="faq">
-      <div class="container narrow">
-        <div class="section-head">
-          <p class="kicker">FAQ</p>
-          <h2>Common questions</h2>
-        </div>
-        <div class="faq">
-          <details>
-            <summary>How much does it cost?</summary>
-            <p>It depends on the job. A quick photo touch-up costs far less than a full website. Email me with the details and you'll get a free, fixed quote before any work begins.</p>
-          </details>
-          <details>
-            <summary>Do you build websites for small businesses in Melbourne?</summary>
-            <p>Yes. I design and build fast, mobile-friendly websites for Melbourne small businesses, sole traders and creatives, and can set up your domain, hosting and email too.</p>
-          </details>
-          <details>
-            <summary>What kinds of photo and video editing do you do?</summary>
-            <p>Photo retouching, colour correction, background and object removal, old photo restoration, and product and real-estate photos. For video: cutting, colour grading, audio clean-up, captions and edits for Reels, TikTok and YouTube.</p>
-          </details>
-          <details>
-            <summary>How do I send you my files?</summary>
-            <p>Small files can be attached to an email. For larger photos or videos, a link from Google Drive, Dropbox, OneDrive or WeTransfer works well.</p>
-          </details>
-          <details>
-            <summary>How long does it take?</summary>
-            <p>Most photo edits are back within a day or two. Video and web projects vary, and your quote will include an expected timeframe.</p>
-          </details>
-          <details>
-            <summary>What if I'm not happy with the result?</summary>
-            <p>Tell me what you'd like changed. Reasonable revisions are included, and I'll work with you until it's right.</p>
-          </details>
-          <details>
-            <summary>Do you only work with people in Melbourne?</summary>
-            <p>I'm based in Melbourne, but everything is done online, so I can work with clients anywhere in Australia and beyond.</p>
-          </details>
-          <details>
-            <summary>Will you keep copies of my files?</summary>
-            <p>Only as long as needed to finish the job and handle any follow-up tweaks. Just ask, and I'll permanently delete everything once you're happy.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
+  <main class="card">
+    <span class="tag">Under development</span>
+    <h1>Photo <span>Wiz</span></h1>
+    <p class="lead">Our new website is on its way.</p>
+    <p class="sub">Web design, photo editing and video editing in Melbourne. In the meantime, get in touch by email.</p>
+    <a class="email" href="mailto:photowizcontact@gmail.com?subject=Enquiry%20-%20Photo%20Wiz">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+      photowizcontact@gmail.com
+    </a>
+    <p class="meta">
+      Photo Wiz (Melbourne) &middot; ABN 80 150 760 138<br>
+      Owned and operated by Menno Brandt
+    </p>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand brand-footer" href="#top">
-          <svg class="brand-logo" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16"/><path d="M36 12l3.2 8.8L48 24l-8.8 3.2L36 36l-3.2-8.8L24 24l8.8-3.2z" fill="#fff"/><path d="M20 34l1.8 4.2L26 40l-4.2 1.8L20 46l-1.8-4.2L14 40l4.2-1.8z" fill="#fff" opacity=".85"/><path d="M44 42l1.2 2.8L48 46l-2.8 1.2L44 50l-1.2-2.8L40 46l2.8-1.2z" fill="#fff" opacity=".7"/></svg>
-          <span>Photo<b>Wiz</b></span>
-        </a>
-        <p class="muted">Affordable web design, photo editing and video editing in Melbourne, Victoria.</p>
-      </div>
-      <nav class="footer-links" aria-label="Footer">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#privacy">Privacy</a>
-        <a href="#contact">Contact</a>
-        <a href="https://mennobrandt.com" target="_blank" rel="noopener">mennobrandt.com</a>
-      </nav>
-    </div>
-    <div class="container footer-bottom">
-      <span>ABN 80 150 760 138</span>
-      <span>&copy; <span id="year">2026</span> Photo Wiz (Melbourne). Owned and operated by Menno Brandt.</span>
-    </div>
-  </footer>
-
-  <button class="next-arrow" type="button" aria-label="Go to the next section">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-  </button>
-
-  <script src="script.js?v=5" defer></script>
 </body>
 </html>
